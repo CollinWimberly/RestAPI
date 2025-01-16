@@ -1,0 +1,33 @@
+<%- include('partials/header.ejs') %>
+<nav class="navbar navbar-light bg-light">
+    <div class="container">
+        <span class="navbar-brand">
+            <img src="/images/IGDBSearchLogo.svg" alt="Search logo" width="30" height="24">
+            Welcome to the CMP Internet Game Database Search Page!
+        </span>
+    </div>
+</nav>
+<header>
+    <div class="container">
+        <div class="row">
+            <h1 class="main-heading jersey-10-regular">Games!!!!!</h1>
+        </div>
+        <div class="row">
+            <form action="" method="GET">
+                <div class="input-group">
+                    <input type="text"
+                    class="form-control form-control-lg"
+                    placeholder="search"
+                    id="searchtext"
+                    name="like"
+                   >
+                    <div class="input-group-append">
+                        <button class="btn btn-primary btn-lg" type="submit" id="searchbtn">Search</button>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </div>
+</header>
+<%- include('partials/footer.ejs') %>
