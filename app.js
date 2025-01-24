@@ -19,6 +19,7 @@ const genreRoutes = require("./routes/api/genreRoutes");
 const characterRoutes = require("./routes/api/characterRoutes");
 const websitesRoutes = require("./routes/api/websitesRoutes");
 const similarRoutes = require("./routes/api/similarRoutes");
+const coverRoutes = require("./routes/api/coverRoutes");
 //const platformsRoutes = require("./routes/platformsRoutes")
 
 app.use("/api/games", gameRoutes);
@@ -29,6 +30,7 @@ app.use("/api/genres", genreRoutes);
 app.use("/api/characters", characterRoutes);
 app.use("/api/websites", websitesRoutes);
 app.use("/api/similar", similarRoutes);
+app.use("/api/covers", coverRoutes);
 //app.use('/api/platforms', platformsRoutes);
 
 //view handling

@@ -1,7 +1,6 @@
 {
     "name": "gamesrestapi",
     "version": "1.0.0",
-    "description": "",
     "main": "app.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
@@ -17,5 +16,6 @@
         "mysql2": "^3.12.0",
         "swagger-jsdoc": "^6.2.8",
         "swagger-ui-express": "^5.0.1"
-    }
+    },
+    "description": ""
 }
