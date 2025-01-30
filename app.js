@@ -35,8 +35,10 @@ app.use("/api/covers", coverRoutes);
 
 //view handling
 const homeRoute = require("./routes/views/homeRoutes");
+const gameRoute = require("./routes/views/gameRoutes");
 const { config } = require("process");
 app.use("/", homeRoute);
+app.use("/game/", gameRoute);
 
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
@@ -49,5 +51,6 @@ app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
     console.log(`Try going to ${settings.ROOT}:${PORT}/`);
     console.log(`Try going to ${settings.ROOT}:${PORT}/api/games`);
+    console.log(`Try going to ${settings.ROOT}:${PORT}/game`);
     console.log(`Swagger docs available at ${settings.ROOT}:${PORT}/api-docs`);
 });
